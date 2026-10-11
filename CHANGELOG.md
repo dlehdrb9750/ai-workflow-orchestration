@@ -11,6 +11,6 @@ Initial public, independently written AWPS reference and in-memory demonstration
 - Unknown-write-effect reconciliation before retry
 - Distinct, in-scope batch redefinition
 - JSON checkpoint and resume
-- 14 locally passing tests
+- 14 locally passing tests and a successful public GitHub Actions run
 
 **Maturity:** educational prototype, not a deployed autonomous agent or a replica of any private operational standard.

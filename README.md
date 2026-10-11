@@ -1,5 +1,7 @@
 # AI Workflow Orchestration
 
+[![Python reference checks](https://github.com/dlehdrb9750/ai-workflow-orchestration/actions/workflows/python-tests.yml/badge.svg)](https://github.com/dlehdrb9750/ai-workflow-orchestration/actions/workflows/python-tests.yml)
+
 **AWPS — Adaptive Work Planning Standard**  
 **Public release:** v0.1.0 · Reference architecture + tested educational prototype · 2026-10-11
 
@@ -45,7 +47,7 @@ python -m unittest discover -s tests -v
 
 The demonstration builds a **fictional public-data briefing**, injects a transient error in its source-gathering WP, completes an independent layout WP, redefines the failed attempt through a different source, serializes a checkpoint, then resumes and completes the report.
 
-**Local validation:** 14 unit tests passed on 2026-10-11. The code is deterministic and entirely in memory. A reported result is *simulated* from caller-supplied evidence; it does not authenticate permissions or independently verify real-world work.
+**Verification:** 14 unit tests passed locally and in [GitHub Actions CI](https://github.com/dlehdrb9750/ai-workflow-orchestration/actions/runs/38136344974) on 2026-10-11. The code is deterministic and entirely in memory. A reported result is *simulated* from caller-supplied evidence; it does not authenticate permissions or independently verify real-world work.
 
 ## Documentation
 

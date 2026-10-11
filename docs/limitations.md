@@ -7,7 +7,7 @@ python examples/workflow_demo.py
 python -m unittest discover -s tests -v
 ```
 
-**Observed during preparation:** 14/14 standard-library unit tests passed locally on 2026-10-11.
+**Verified on 2026-10-11:** 14/14 standard-library unit tests passed locally and in [GitHub Actions](https://github.com/dlehdrb9750/ai-workflow-orchestration/actions/runs/38136344974). The hosted run also executed the demo successfully. This is evidence about this toy model, not real LLM orchestration.
 
 The tests cover prerequisites; incomplete batch versus WP versus Plan; independent progress after transient failure; HOLD and reconciliation for unknown effects; explicit-denial handling; bounded, distinct approach redefinition; checkpoint reconstruction; and cyclic/duplicate WP rejection.
 
