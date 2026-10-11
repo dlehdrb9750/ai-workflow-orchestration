@@ -1,0 +1,20 @@
+name: Python reference checks
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout public source
+        uses: actions/checkout@v4
+      - name: Run educational workflow demo
+        run: python3 examples/workflow_demo.py
+      - name: Run unit tests
+        run: python3 -m unittest discover -s tests -v
